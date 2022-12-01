@@ -51,6 +51,17 @@ public static class MenuParser
             selected = selected.Replace("coke", "Coke ");
             list.Add(selected);
         }
+        if(selected.Length != 0)
+        {
+            string result = null;
+            foreach(var item in list)
+            {
+                result = item;
+            }
+            Console.WriteLine();
+            Console.WriteLine(result);
+            Console.WriteLine();
+        }
         else
         {
             Console.WriteLine();
