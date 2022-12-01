@@ -8,46 +8,48 @@ namespace Restaurant;
 
 public static class MenuParser
 {
-
     public static void Parser(string selected)
     {
+        List<string> list = new List<string>();
         if (selected.Contains("burger"))
         {
             selected = selected.Replace("burger", "Burger ");
+            list.Add(selected);
         }
         if (selected.Contains("fries"))
         {
             selected = selected.Replace("fries", "Fries ");
+            list.Add(selected);
         }
         if (selected.Contains("chicken"))
         {
             selected = selected.Replace("chicken", "Chicken ");
+            list.Add(selected);
         }
         if (selected.Contains("pizza"))
         {
             selected = selected.Replace("pizza", "Pizza ");
+            list.Add(selected);
         }
         if (selected.Contains("sandwich"))
         {
             selected = selected.Replace("sandwich", "Sandwich ");
+            list.Add(selected);
         }
         if (selected.Contains("onionrings"))
         {
             selected = selected.Replace("onionrings", "Onionrings ");
+            list.Add(selected);
         }
         if (selected.Contains("milkshake"))
         {
             selected = selected.Replace("milkshake", "Milkshake ");
+            list.Add(selected);
         }
         if (selected.Contains("coke"))
         {
             selected = selected.Replace("coke", "Coke ");
-        }
-        if (selected.Length != 0)
-        {
-            Console.WriteLine();
-            Console.WriteLine(selected);
-            Console.WriteLine();
+            list.Add(selected);
         }
         else
         {
